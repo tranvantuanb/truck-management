@@ -21,6 +21,7 @@
 
   .label-info {
     background-color: #3c8dbc;
+    margin-right: 5px;
   }
 
   .label-new {
@@ -37,11 +38,58 @@
 }
 
 .detail-footer {
+  text-align: center;
+
+  .btn-back {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc !important;
+    margin: 0 20px;
+
+    &:hover {
+      background-color: #d4d4d4;
+      border-color: #8c8c8c;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #e6e6e6;
+      border-color: #8c8c8c;
+    }
+
+    &:active {
+      background-color: #adadad;
+      border-color: #adadad;
+    }
+  }
+
+  .btn-edit {
+    color: #fff;
+    background-color: #00c0ef;
+    border-color: #00acd6;
+    margin: 0 20px;
+
+    &:hover {
+      background-color: #00acd6;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #31b0d5;
+      border-color: #1b6d85;
+    }
+
+    &:active {
+      background-color: #269abc;
+      border-color: #1b6d85;
+    }
+  }
+
   .btn-delete {
-    margin-left: 150px;
     color: #fff;
     background-color: #d9534f;
     border-color: #d43f3a;
+    margin: 0 20px;
 
     &:hover {
       color: #fff;

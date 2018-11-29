@@ -114,6 +114,7 @@ export default class TruckForm extends React.Component {
     let truckInfo = this.state.truckInfo;
     truckInfo["driver"] = this.refs.driver.getInputValue();
     truckInfo["cargo_type"] = this.refs.cargoType.getInputValue();
+    truckInfo["truck_type"] = this.refs.truckType.getInputValue();
     let errors = this.getValidation(truckInfo);
 
     if (JSON.stringify(errors) != "{}") {
@@ -228,18 +229,14 @@ export default class TruckForm extends React.Component {
             />
           </div>
           <div className="wrap-input input-select bg1 rs1">
-            <span className="label-input">Truck Type</span>
-            <select
-              name="truck_type"
-              className="select-truck-type"
-              value={this.state.truckInfo["truck_type"]}
-              onChange={this.handleChangeSelection}
-            >
-              <option className="input" value={""}>Choose type</option>
-              {truckType.map((type, index) => {
-                return(<option key={index} className="input" value={type}>{type}</option>)
-              })}
-            </select>
+            <AutoComplete
+              fieldName="Truck Type"
+              placeholder="Enter truck type"
+              errors={this.state.errors}
+              value={this.state.truckInfo.truck_type}
+              ref="truckType"
+              suggestions={truckType}
+            />
           </div>
           <div className="wrap-input input-select bg1 rs1">
             <span className="label-input">Status *</span>

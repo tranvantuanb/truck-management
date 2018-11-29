@@ -105,12 +105,12 @@ export default class TruckDetail extends React.Component {
         </div>
         <div className="box-footer detail-footer">
           <button
-            className="btn btn-default"
+            className="btn btn-back"
             onClick={() => this.handleBack()}>
             Back
           </button>
           <button
-            className="btn submit-form-btn pull-right"
+            className="btn btn-edit"
             onClick={() => this.handleEdit()}>
             <span>
               Edit
