@@ -1,0 +1,65 @@
+.box-detail {
+
+  .text-muted {
+    color: #777;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 100%;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
+
+  .label-info {
+    background-color: #3c8dbc;
+  }
+
+  .label-new {
+    background-color: #5cb85c;
+  }
+
+  .label-in-use {
+    background-color: #5bc0de;
+  }
+
+  .label-stopped {
+    background-color: #d9534f;
+  }
+}
+
+.detail-footer {
+  .btn-delete {
+    margin-left: 150px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+
+    &:hover {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #ac2925;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #761c19;
+    }
+
+    &:active {
+
+      color: #fff;
+      background-color: #ac2925;
+      border-color: #ac2925;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import 'header';
+@import 'full-truck';
+@import 'truck-form';
+@import 'truck-detail';
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
