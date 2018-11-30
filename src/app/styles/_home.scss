@@ -1,0 +1,36 @@
+.home-page {
+  position: relative;
+
+  .back-ground-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .topic {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+
+    .title {
+      text-align: center;
+      color: #fff;
+      font-size: 72px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 15px;
+    }
+
+    .line-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .free-text {
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      margin: 15px 0 0;
+    }
+  }
+}
